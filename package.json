@@ -1,0 +1,59 @@
+{
+  "license": "MIT",
+  "name": "extension-examples",
+  "version": "0.8.0",
+  "description": "Looker extension examples",
+  "author": "Looker",
+  "private": true,
+  "workspaces": [
+    "react/javascript/*",
+    "react/typescript/*",
+    "vanilla/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "lerna": "lerna",
+    "clean": "lerna run --parallel clean",
+    "build": "lerna run --parallel build",
+    "lint": "lerna run --parallel lint:es",
+    "lint:fix": "lerna run --parallel lint:es:fix",
+    "tsc": "lerna run --parallel tsc",
+    "test": "lerna run --parallel test",
+    "uberext": "ts-node ./scripts/create_uber_extension_project.ts",
+    "update-packages": "ts-node ./scripts/update_packages.ts",
+    "dev:demo-core-sdk": "yarn workspace demo-core-sdk develop",
+    "dev:demo-embeds": "yarn workspace demo-embeds develop",
+    "dev:demo-extension-sdk": "yarn workspace demo-extension-sdk develop",
+    "dev:demo-external-api": "yarn workspace demo-external-api develop",
+    "dev:file-download": "yarn workspace file-download develop",
+    "dev:file-upload": "yarn workspace file-upload develop",
+    "dev:file-upload-server": "yarn workspace file-upload server",
+    "dev:helloworld-js": "yarn workspace helloworld-js develop",
+    "dev:map-iframe": "yarn workspace map-iframe develop",
+    "dev:access-key-demo": "cd react/typescript/access-key-demo && yarn develop",
+    "dev:access-key-demo-server": "cd react/typescript/access-key-demo && yarn start-server",
+    "dev:helloworld-ts": "cd react/typescript/helloworld-ts && yarn develop",
+    "dev:kitchensink": "cd react/typescript/kitchensink && yarn develop",
+    "dev:looks-query": "cd react/typescript/looks-query-redux && yarn develop",
+    "dev:looks-query-redux": "cd react/typescript/looks-query-redux && yarn develop",
+    "dev:counter": "cd vanilla/counter && yarn develop",
+    "dev:counter-ts": "cd vanilla/counter-ts && yarn develop",
+    "dev:vis-filter-components": "yarn workspace vis-and-filter-components develop"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "@types/yargs": "^16.0.2",
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.5.2",
+    "yargs": "^17.0.1"
+  },
+  "resolutions": {
+    "trim": ">= 0.0.3",
+    "ansi-regex": "5.0.1",
+    "minimist": ">= 1.2.6",
+    "async": ">= 2.6.4"
+  }
+}

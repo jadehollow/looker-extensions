@@ -1,0 +1,7 @@
+node_modules/
+.direnv/
+.eslintcache
+.env
+dist/
+.github/
+.yarn/
