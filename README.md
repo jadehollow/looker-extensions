@@ -17,21 +17,13 @@ Custom applications and tools created with the extension framework can be access
 
 We currently have examples for:
 
-- [React](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/react)
-  - [Typescript](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/react/typescript)
-  - [Javascript](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/react/javascript)
-  - [Typescript & Redux](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/react/typescript/looks-query-redux)
-- [Vanilla (no react)](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/vanilla)
-  - [Javascript](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/vanilla/counter)
-  - [Typescript](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/vanilla/counter-ts)
-
 There are different types of examples present. Each language/framework has a very simple "Hello World" style example that is meant to be used as a template or starting point to make your initial configuration easier.
 
-For React the "[Demo Extension SDK](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/react/javascript/demo-extension-sdk)" example demonstrates basic extension functionality.
+For React the Demo Extension SDK example demonstrates basic extension functionality.
 
-For React & Typescript, there are some more complex examples present including a "[Kitchen Sink](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/react/typescript/kitchensink)" example intended to be a reference implementation for nearly all possible Extension functionality. It should not be used as a starting point or template, rather as an encyclopedia.
+For React & Typescript, there are some more complex examples present including a Kitchen Sink example intended to be a reference implementation for nearly all possible Extension functionality. It should not be used as a starting point or template, rather as an encyclopedia.
 
-For those seeking to build monetized or otherwise gated extensions, the [access-key-demo](https://code.panderasystems.com/jade.hollowell/looker-extension-examples/-/tree/main/react/typescript/access-key-demo) extension will be of interest!
+For those seeking to build monetized or otherwise gated extensions, the access-key-demo extension will be of interest!
 
 ## Running the examples
 
@@ -39,7 +31,7 @@ For those seeking to build monetized or otherwise gated extensions, the [access-
 
 Each example directory has a README.md that details how to run that specific example. You should follow the specific examples for each, but the general workflow is:
 
-0. `git clone git@code.panderasystems.com:jade.hollowell/looker-extension-examples.git` to clone this entire repository.
+0. `git clone git@github.com:javahollow/looker-extensions.git` to clone this entire repository.
 1. `cd` to the relevant directory.
 2. `yarn install` to get all necessary packages.
 3. `yarn develop` to begin serving the bundle
